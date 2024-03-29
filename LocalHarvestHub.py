@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# LocalHarvestHub
 def display_menu():
     print("Welcome to LocalHarvestHub!")
     print("1. View available products")
@@ -10,7 +11,13 @@ def display_menu():
 def view_products():
     print("Available Products:")
     # Code to display available products
-
+products = {
+        "Apples",
+        "Oranges",
+        "Tomatoes",
+        "Carrots",
+        "cabbage"
+    }
 
 def buy_products():
     print("Buying Products:")
