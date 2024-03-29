@@ -30,7 +30,10 @@ def buy_products():
 
 def sell_products():
     print("Selling Products:")
-    # Code for selling products
+    # Allow users to list their own products for sale
+    product_name = input("Enter the product name: ")
+    product_price = float(input("Enter the product price: "))
+    print(f"Your product '{product_name}' has been listed for sale at ${product_price}.")
 
 
 def main():
