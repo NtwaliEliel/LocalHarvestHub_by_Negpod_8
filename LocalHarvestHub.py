@@ -19,7 +19,8 @@ def buy_products():
         "Apples": 2.50,
         "Oranges": 1.75,
         "Tomatoes": 3.00,
-        "Carrots": 1.50
+        "Carrots": 1.50,
+        "cabbage": 4.00
     }
 
     print("Product\t\tPrice")
