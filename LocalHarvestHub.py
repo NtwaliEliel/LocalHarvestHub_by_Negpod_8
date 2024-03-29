@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# LocalHarvestHub
+# LocalHarvestHub project
 def display_menu():
     print("Welcome to LocalHarvestHub!")
     print("1. View available products")
