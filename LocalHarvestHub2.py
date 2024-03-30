@@ -3,12 +3,12 @@
 def starting_menu():
     print("Welcome to LocalHarvestHub!")
     print("1. I am a farmer")
-    print("2. I am a Market Provider")
+    print("2. I am a buyer")
     print("0. Exit")
 
 def Farmer_menu():
     print("Welcome to LocalHarvestHub!")
-    print("Market Provider!")
+    print("buyer!")
     print("1. View available stock")
     print("2. Enter available stock")
     print("3. Enter your location")
@@ -20,9 +20,9 @@ def Inserting_Available_stock():
     product = Available_Products.split()
     print("Your Stoke contains:", product)
 
-def Market_provider_menu():
+def buyer_menu():
     print("Welcome to LocalHarvestHub!")
-    print("Market Provider!")
+    print("buyer!")
     print("1. View available products")
     print("2. Enter your location")
     print("3. Buy products")
