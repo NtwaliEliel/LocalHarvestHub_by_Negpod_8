@@ -27,6 +27,7 @@ def Market_provider_menu():
     print("2. Enter your location")
     print("3. Buy products")
     print("0. Exit")
+
 def view_products():
     print("Available Products:")
     """Code to display available products"""
@@ -53,8 +54,20 @@ def buy_products():
 
 def sell_products():
     print("Selling Products:")
-    # Code for selling products
+    """Code for selling products"""
 
+    print("Selling Products:")
+    """Allow users to list their own products for sale"""
+    product_name = input("Enter the product name: ")
+    print("DEBUG: product_name =", product_name)
+    try:
+        product_price = float(input("Enter the product price: "))
+        print("DEBUG: product_price =", product_price)
+    except ValueError:
+        print("Invalid price. Please enter a valid number.")
+        return
+    """Return to the menu without proceeding further"""
+    print("Your product '" + product_name + "' has been listed for sale at $" + str(product_price) + ".")
 
 def main():
     while True:
