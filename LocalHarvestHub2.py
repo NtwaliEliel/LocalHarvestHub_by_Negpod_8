@@ -85,7 +85,7 @@ def main():
             elif choice == "3":
                 Location_set_up()
             elif choice == "4":
-                sell_product()
+                sell_products()
             elif choice == "0":
                 print("Thank you for using LocalHarvestHub. Goodbye!")
                 break
@@ -93,7 +93,7 @@ def main():
                 print("Invalid choice. Please try again.")
 
         elif choice == "2":
-            Market_provider_menu()
+            buyer_menu()
             choice = input("Enter your choice: ")
 
             if choice == "1":
