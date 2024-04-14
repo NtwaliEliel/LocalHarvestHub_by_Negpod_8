@@ -8,7 +8,7 @@ def starting_menu():
 
 def Farmer_menu():
     print("Welcome to LocalHarvestHub!")
-    print("buyer!")
+    print("FARMER!")
     print("1. View available stock")
     print("2. Enter available stock")
     print("3. Enter your location")
@@ -22,7 +22,7 @@ def Inserting_Available_stock():
 
 def buyer_menu():
     print("Welcome to LocalHarvestHub!")
-    print("buyer!")
+    print("BUYER!")
     print("1. View available products")
     print("2. Enter your location")
     print("3. Buy products")
