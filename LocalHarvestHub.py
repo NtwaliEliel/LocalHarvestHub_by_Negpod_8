@@ -17,13 +17,19 @@ def Farmer_menu():
     print("0. Exit")
 
 def Inserting_Available_stock():
-    Available_Products = input("Enter available products separate them with space : ")
+    Available_Products = input("Enter available products separated by space: ")
     product = Available_Products.split()
     print("Your Stock contains:", product)
 
 def Delete_Product():
     product_name = input("Enter the product name to delete: ")
     print(product_name + " has been deleted from your stock")
+
+def Set_Location_Farmer():
+    address = input("Enter your working address: ")
+    print("Your working address is:", address)
+    print("Location successfully set!")
+    return address
 
 def buyer_menu():
     print("Welcome to LocalHarvestHub!")
@@ -47,9 +53,11 @@ def view_products():
     for product, price in products.items():
         print(product + "\t\t" + str(price))
 
-def Location_set_up():
-    print("Enter your working address:")
-    """code to set up working address"""
+def Set_Location_Buyer():
+    address = input("Enter your working address: ")
+    print("Your working address is:", address)
+    print("Location successfully set!")
+    return address
 
 def buy_products():
     products = {
@@ -94,7 +102,7 @@ def main():
             elif choice == "2":
                 Inserting_Available_stock()
             elif choice == "3":
-                Location_set_up()
+                address = Set_Location_Farmer()
             elif choice == "4":
                 sell_products()
             elif choice == "5":
@@ -112,7 +120,7 @@ def main():
             if choice == "1":
                 view_products()
             elif choice == "2":
-                Location_set_up()
+                address = Set_Location_Buyer()
             elif choice == "3":
                 buy_products()
             elif choice == "0":
