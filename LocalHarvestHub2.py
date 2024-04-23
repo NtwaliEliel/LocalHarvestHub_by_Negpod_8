@@ -31,6 +31,18 @@ def buyer_menu():
 def view_products():
     print("Available Products:")
     """Code to display available products"""
+    products = {
+        "Apples": 2.50,
+        "Oranges": 1.75,
+        "Tomatoes": 3.00,
+        "Carrots": 1.50
+    }
+
+    print("Product\t\tPrice")
+    print("---------------------")
+    for product, price in products.items():
+        print(product + "\t\t" + str(price))
+
 
 def Location_set_up():
     print("Enter your working address:")
@@ -59,10 +71,10 @@ def sell_products():
     print("Selling Products:")
     """Allow users to list their own products for sale"""
     product_name = input("Enter the product name: ")
-    print("DEBUG: product_name =", product_name)
+    print(" product_name =", product_name)
     try:
         product_price = float(input("Enter the product price: "))
-        print("DEBUG: product_price =", product_price)
+        print(" product_price =", product_price)
     except ValueError:
         print("Invalid price. Please enter a valid number.")
         return
