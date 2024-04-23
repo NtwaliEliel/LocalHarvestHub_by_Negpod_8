@@ -23,8 +23,7 @@ def Inserting_Available_stock():
 
 def Delete_Product():
     product_name = input("Enter the product name to delete: ")
-    print(f"{product_name} has been deleted from your stock")
-    print("Your Stoke contains:", product)
+    print(product_name + " has been deleted from your stock")
 
 def buyer_menu():
     print("Welcome to LocalHarvestHub!")
@@ -47,11 +46,6 @@ def view_products():
     print("---------------------")
     for product, price in products.items():
         print(product + "\t\t" + str(price))
-    """Code to display available products"""
-
-def Location_set_up():
-    print("Enter your working address:")
-    """code to set up working address"""
 
 def Location_set_up():
     print("Enter your working address:")
@@ -72,17 +66,12 @@ def buy_products():
 
     choice = input("Enter the product you want to buy: ")
     if choice in products:
-        print(f"You have purchased {choice} for ${products[choice]}")
+        print("You have purchased " + choice + " for $" + str(products[choice]))
     else:
         print("Invalid choice. Please try again.")
 
-
 def sell_products():
     print("Selling Products:")
-    """Code for selling products"""
-
-    print("Selling Products:")
-    """Allow users to list their own products for sale"""
     product_name = input("Enter the product name: ")
     try:
         product_price = float(input("Enter the product price: "))
@@ -90,8 +79,6 @@ def sell_products():
     except ValueError:
         print("Invalid price. Please enter a valid number.")
         return
-    """Return to the menu without proceeding further"""
-    print("Your product '" + product_name + "' has been listed for sale at $" + str(product_price) + "."
 
 def main():
     while True:
@@ -111,7 +98,7 @@ def main():
             elif choice == "4":
                 sell_products()
             elif choice == "5":
-                Delete_product()
+                Delete_Product()
             elif choice == "0":
                 print("Thank you for using LocalHarvestHub. Goodbye!")
                 break
