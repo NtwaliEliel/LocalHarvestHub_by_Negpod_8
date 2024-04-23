@@ -13,17 +13,24 @@ def Farmer_menu():
     print("2. Enter available stock")
     print("3. Enter your location")
     print("4. Sell product")
+<<<<<<< HEAD
     print("5. Delete product")
+=======
+>>>>>>> e087bd968b42546ba328807b6aed4cdd8cb906fd
     print("0. Exit")
 
 def Inserting_Available_stock():
     Available_Products = input("Enter available products separate them with space : ")
     product = Available_Products.split()
+<<<<<<< HEAD
     print("Your Stock contains:", product)
 
 def Delete_Product():
     product_name = input("Enter the product name to delete: ")
     print(f"{product_name} has been deleted from your stock.")
+=======
+    print("Your Stoke contains:", product)
+>>>>>>> e087bd968b42546ba328807b6aed4cdd8cb906fd
 
 def buyer_menu():
     print("Welcome to LocalHarvestHub!")
@@ -35,6 +42,7 @@ def buyer_menu():
 
 def view_products():
     print("Available Products:")
+<<<<<<< HEAD
     products = {
         "Apples": 2.50,
         "Oranges": 1.75,
@@ -46,6 +54,13 @@ def view_products():
     print("---------------------")
     for product, price in products.items():
         print(product + "\t\t" + str(price))
+=======
+    """Code to display available products"""
+
+def Location_set_up():
+    print("Enter your working address:")
+    """code to set up working address"""
+>>>>>>> e087bd968b42546ba328807b6aed4cdd8cb906fd
 
 def Location_set_up():
     print("Enter your working address:")
@@ -70,14 +85,28 @@ def buy_products():
     else:
         print("Invalid choice. Please try again.")
 
+
 def sell_products():
     print("Selling Products:")
+<<<<<<< HEAD
+=======
+    """Code for selling products"""
+
+    print("Selling Products:")
+    """Allow users to list their own products for sale"""
+>>>>>>> e087bd968b42546ba328807b6aed4cdd8cb906fd
     product_name = input("Enter the product name: ")
     try:
         product_price = float(input("Enter the product price: "))
         print("Your product '" + product_name + "' has been listed for sale at $" + str(product_price) + ".")
     except ValueError:
         print("Invalid price. Please enter a valid number.")
+<<<<<<< HEAD
+=======
+        return
+    """Return to the menu without proceeding further"""
+    print("Your product '" + product_name + "' has been listed for sale at $" + str(product_price) + ".")
+>>>>>>> e087bd968b42546ba328807b6aed4cdd8cb906fd
 
 def main():
     while True:
@@ -96,8 +125,11 @@ def main():
                 Location_set_up()
             elif choice == "4":
                 sell_products()
+<<<<<<< HEAD
             elif choice == "5":
                 Delete_Product()
+=======
+>>>>>>> e087bd968b42546ba328807b6aed4cdd8cb906fd
             elif choice == "0":
                 print("Thank you for using LocalHarvestHub. Goodbye!")
                 break
